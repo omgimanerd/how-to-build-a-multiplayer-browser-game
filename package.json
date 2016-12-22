@@ -1,0 +1,23 @@
+{
+  "name": "how-to-make-a-multiplayer-game",
+  "version": "1.0.0",
+  "description": "A tutorial for creating multiplayer browser games",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/omgimanerd/how-to-make-a-multiplayer-game.git"
+  },
+  "author": "Alvin Lin (omgimanerd)",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/omgimanerd/how-to-make-a-multiplayer-game/issues"
+  },
+  "homepage": "https://github.com/omgimanerd/how-to-make-a-multiplayer-game#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.7.2"
+  }
+}
