@@ -16,6 +16,10 @@ app.get('/', function(request, response) {
   response.sendFile(path.join(__dirname, 'index.html'));
 });
 
+server.listen(5000, function() {
+  console.log('Starting server on port 5000');
+});
+
 var players = {};
 io.on('connection', function(socket) {
   socket.on('new player', function() {
@@ -44,7 +48,3 @@ io.on('connection', function(socket) {
 setInterval(function() {
   io.sockets.emit('state', players);
 }, 1000 / 60);
-
-server.listen(5000, function() {
-  console.log('Starting server on port 5000');
-});
