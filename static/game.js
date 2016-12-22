@@ -38,8 +38,8 @@ document.addEventListener('keyup', function(event) {
       break;
   }
 });
-socket.emit('new player');
 
+socket.emit('new player');
 setInterval(function() {
   socket.emit('movement', movement);
 }, 1000 / 60);
